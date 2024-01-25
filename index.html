@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- paginathing.js CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/paginathing@2.0.1/dist/paginathing.min.css">
+</head>
+
+<body>
+    <div class="news-container"></div>
+        <h1>近隣のお店を表示します。</h1>
+        <div class="top">
+            <form>
+                <label for="ranges">検索範囲</label>
+                <select id="ranges">
+                    <option value="1">300m</option>
+                    <option value="2">500m</option>
+                    <option value="3">1000m </option>
+                    <option value="4">2000m </option>
+                    <option value="5">3000m </option>
+                </select>
+            </form>
+            <button value="1" data-page="1">検索</button><br />
+        </div>
+        <p class="status"></p>
+        <a class="map-link" target="_blank" rel="noopener"></a>
+        <h2></h2>
+        
+        <div class="main"></div>
+        <template id="template">
+            <ul style="list-style: none;">
+                <li class="img"><img src="" alt="店舗画像"></li>
+                <li class="name"><a class="shop"></a></li>
+                <li class="access"><a class="map"></a></li>
+                <li class="average"></li>
+                <li class="open"></li>
+            </ul>
+        </template>
+
+        <p class="page"></p>
+        <div class="next"></div>
+
+        <span></span>
+    </div>
+
+    <script type="text/javascript" src="main.js"></script>
+    <!-- jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/paginathing@2.0.1/dist/paginathing.min.js"></script>
+
+
+
+</body>
+
+</html>
