@@ -6,7 +6,7 @@ $range = $_POST['range'];
 $start = $_POST['start'];
 // クエリをまとめる
 $query = [
-    'key' => '90da484d60c041ff', // <-- ここにあなたのAPIキーを設定してください。
+    'key' => '', // <-- ここにあなたのAPIキーを設定してください。
     'lat' => $latitude, // 緯度
     'lng' => $longitude, // 経度
     'range' => $range, // 検索範囲
